@@ -1,0 +1,37 @@
+.container-lenguage {
+    width: 1370px;
+    height: 400px;
+    margin: 50px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    background-color: #8FE3CF;
+    box-shadow: 0 3px 13px 1px rgb(65, 64, 64);
+}
+
+.image-lenguage {
+    height: 100%;
+    width: 600px;
+}
+
+.container-text-lenguage {
+    text-align: center;
+    padding: 10px;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.name-language {
+    font-size: 1.3rem;
+    padding: 30px;
+}
+
+.countries-language {
+    padding-bottom: 30px;
+}
+
+.description-language{
+    font-size: 1.1rem;
+    text-align: justify;
+}

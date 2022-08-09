@@ -10,7 +10,7 @@ function App() {
         <Lenguage 
         name="Spanish"
         countries="MEXICO, COLOMBIA, SPAIN, ARGENTINA, VENEZUELA"
-        description="Spanish (español or castellano, Castilian) is a Romance language of the Indo-European language family that evolved from colloquial spoken Latin in the Iberian Peninsula of Europe. Today, it is a global language with nearly 500 million native speakers, mainly in the Americas and Spain. Spanish is the official language of 20 countries. It is the world's second-most spoken native language after Mandarin Chinese;[4][5] the world's fourth-most spoken language overall after English, Mandarin Chinese, and Hindustani (Hindi-Urdu). "
+        description="Spanish (español or castellano, Castilian) is a Romance language of the Indo-European language family that evolved from colloquial spoken Latin in the Iberian Peninsula of Europe. Today, it is a global language with nearly 500 million native speakers, mainly in the Americas and Spain. Spanish is the official language of 20 countries. It is the world's second-most spoken native language after Mandarin Chinese; the world's fourth-most spoken language overall after English, Mandarin Chinese, and Hindustani (Hindi-Urdu). "
         img="argentina.png"/>
 
         <Lenguage 

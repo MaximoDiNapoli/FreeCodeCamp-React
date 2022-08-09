@@ -11,11 +11,11 @@ function App() {
 
   const clickManagement = () => {
     setNumClicks(numClicks + 1);
-  }
+  };
 
   const restarCount = () => {
     setNumClicks(0);
-  }
+  };
 
   return (
     <div className="App">

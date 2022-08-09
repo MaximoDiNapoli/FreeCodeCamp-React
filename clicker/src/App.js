@@ -2,15 +2,19 @@
 import './App.css';
 import Button from './components/Button';
 import logo from "./images/md.png"
+import Counter from './components/Counter';
+import { useState } from 'react';
 
 function App() {
 
+  const [numClicks, setNumClicks] = useState(0); 
+
   const clickManagement = () => {
-    console.log("CLICK")
+    setNumClicks(numClicks + 1);
   }
 
   const restarCount = () => {
-    console.log("Restart")
+    setNumClicks(0);
   }
 
   return (
@@ -22,14 +26,15 @@ function App() {
           alt="" />
       </div>
       <div className='main-container'>
+        <Counter numClicks={numClicks} />
         <Button 
           text="Click"
           isClickButton={true}
-          clickManagement={clickManagement}/>
+          clickManagement={clickManagement} />
         <Button 
           text="Restart"
           isClickButton={false}
-          clickManagement={restarCount}/>
+          clickManagement={restarCount} />
       </div>
     </div>
   );

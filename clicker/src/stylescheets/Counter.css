@@ -1,0 +1,12 @@
+.counter-click {
+    min-width: 300px;
+    height: 300px;
+    font-size: 160px;
+    padding: 25px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 8px solid;
+    margin-bottom: 15px;
+}

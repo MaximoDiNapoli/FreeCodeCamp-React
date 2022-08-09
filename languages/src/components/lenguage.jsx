@@ -9,7 +9,7 @@ function Lenguage(props){
         src={require(`../images/${props.img}`)} 
         alt="USA Flag"/>
         <div className="container-text-lenguage">
-          <p className="name-language">{props.name}</p>
+          <p className="name-language"><strong>{props.name}</strong></p>
           <p className="countries-language">{props.countries}</p>
           <p className="description-language">{props.description}</p>
         </div>

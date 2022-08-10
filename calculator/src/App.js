@@ -1,6 +1,7 @@
 import './App.css';
 import mdLogo from "./images/md.png";
 import Button from "./components/Button";
+import Screen from "./components/Screen"
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
           alt='a'/>
         </div>
         <div className='calculator-container'>
-          <div className='row'></div>
+            <Screen input="aaaaa"/>
           <div className='row'>
             <Button>1</Button>
             <Button>2</Button>

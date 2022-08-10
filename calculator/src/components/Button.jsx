@@ -10,7 +10,8 @@ function Button (props) {
 
   return (
     <div
-      className={`button-container ${isOperator(props.children) ? "operator" : ""}`.trimEnd()}>
+      className={`button-container ${isOperator(props.children) ? "operator" : ""}`.trimEnd()}
+      onClick={() => props.clickManagment(props.children)}>
       {props.children}
     </div>
   );

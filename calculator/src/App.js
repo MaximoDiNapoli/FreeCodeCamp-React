@@ -1,9 +1,23 @@
 import './App.css';
 import mdLogo from "./images/md.png";
 import Button from "./components/Button";
-import Screen from "./components/Screen"
+import Screen from "./components/Screen";
+import ClearButton from "./components/ClearButton";
+import { useState } from "react";
+
 
 function App() {
+
+  const [input, setInput] = useState("");
+
+  const addInput = val => {
+    setInput(input + val);
+  };
+
+  const clearInput = val => {
+    setInput("");
+  };
+
   return (
     <div className="App">
         <div className='logo-container'>
@@ -12,30 +26,33 @@ function App() {
           alt='a'/>
         </div>
         <div className='calculator-container'>
-            <Screen input="aaaaa"/>
+            <Screen input={input}/>
           <div className='row'>
-            <Button>1</Button>
-            <Button>2</Button>
-            <Button>3</Button>
-            <Button>+</Button>
+            <Button clickManagment={addInput}>1</Button>
+            <Button clickManagment={addInput}>2</Button>
+            <Button clickManagment={addInput}>3</Button>
+            <Button clickManagment={addInput}>+</Button>
           </div>
           <div className='row'>
-            <Button>4</Button>
-            <Button>5</Button>
-            <Button>6</Button>
-            <Button>-</Button>
+            <Button clickManagment={addInput}>4</Button>
+            <Button clickManagment={addInput}>5</Button>
+            <Button clickManagment={addInput}>6</Button>
+            <Button clickManagment={addInput}>-</Button>
           </div>
           <div className='row'>
-            <Button>7</Button>
-            <Button>8</Button>
-            <Button>9</Button>
-            <Button>*</Button>
+            <Button clickManagment={addInput}>7</Button>
+            <Button clickManagment={addInput}>8</Button>
+            <Button clickManagment={addInput}>9</Button>
+            <Button clickManagment={addInput}>*</Button>
           </div>
           <div className='row'>
-            <Button>=</Button>
-            <Button>0</Button>
-            <Button>.</Button>
-            <Button>/</Button>
+            <Button clickManagment={addInput}>=</Button>
+            <Button clickManagment={addInput}>0</Button>
+            <Button clickManagment={addInput}>.</Button>
+            <Button clickManagment={addInput}>/</Button>
+          </div>
+          <div className="row">
+            <ClearButton clickManagment={clearInput}>Clear</ClearButton>
           </div>
         </div>
     </div>

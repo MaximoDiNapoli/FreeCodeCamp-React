@@ -1,5 +1,6 @@
 .title-chairs{
     grid-area: "title-chairs";
+    align-items: center;
     margin-left: 40px;
     margin-top: 40px;
     background-color: #5e4b55;
@@ -14,7 +15,7 @@
 }
 
 p{
-    padding-top: 15px;
+    padding-top: 12px;
     font-size: larger;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

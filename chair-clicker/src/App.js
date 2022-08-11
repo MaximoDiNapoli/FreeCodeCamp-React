@@ -3,6 +3,7 @@ import './App.css';
 import Building from './components/Building';
 import Text from "./components/Text"
 import { useState } from 'react';
+import Chair from './components/Chair';
 
 function App() {
 
@@ -15,6 +16,11 @@ function App() {
   const [numMetalChair, setNumMetalChair] = useState(0); 
   const [numGamerChair, setNumGamerChair] = useState(0); 
   const [numGamerRgbChair, setNumGamerRgbChair] = useState(0); 
+
+
+  const activateGame = () => {
+    alert("a")
+  }
 
   const brokenChairManagement = () => {
     setNumBrokenChair(numBrokenChair + 1);
@@ -46,6 +52,10 @@ function App() {
       <div className='main-container'>
         <div className='data-container'>
           <Text>123</Text>
+
+          <Chair img="logo.png"
+          clickManagment={activateGame}
+          />
         </div>
         <div className='buildings-container'>
 

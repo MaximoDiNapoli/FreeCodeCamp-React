@@ -6,11 +6,8 @@ function Chair (props) {
 
   return (
     <div className="chair-clicker">
-      <img src=""  
-        alt=""
-
+      <img onClick={() => props.clickManagment()} src={require(`../images/${props.img}`)}
       />
-      <input style="text" />
     </div>
   );
 }

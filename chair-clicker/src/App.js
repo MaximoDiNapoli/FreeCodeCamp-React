@@ -2,7 +2,8 @@
 import './App.css';
 import Building from './components/Building';
 import Text from "./components/Text"
-import { useState, useEffect } from 'react';
+import Chair from "./components/Chair"
+import { useState } from 'react';
 
 function App() {
 
@@ -14,6 +15,12 @@ function App() {
   const [numMetalChair, setNumMetalChair] = useState(0); 
   const [numGamerChair, setNumGamerChair] = useState(0); 
   const [numGamerRgbChair, setNumGamerRgbChair] = useState(0); 
+
+
+  const activateGame = () => {
+    const power = 1 + (numBrokenChair * 10) + (numGeneriChair * 100) + (numSchoolChair * 1000) + (numMetalChair * 10000) + (numGamerChair * 100000) + (numGamerRgbChair * 1000000);
+    setNumChairs(numChairs + power);
+  }
 
   const brokenChairManagement = () => {
     setNumBrokenChair(numBrokenChair + 1);
@@ -43,7 +50,12 @@ function App() {
     <div className="App">
       <div className='main-container'>
         <div className='data-container'>
+
           <Text>{numChairs}</Text>
+
+          <Chair img="logo.png"
+          clickManagment={activateGame}
+          />
         </div>
         <div className='buildings-container'>
 

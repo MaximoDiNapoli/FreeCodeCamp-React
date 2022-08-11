@@ -24,10 +24,21 @@
     margin: 10px;
 }
 
-#p1 , #p2{
+.p1 , .p2{
     font-family: Lato;
     color: black;
     margin: 2px;
+    
+}
+
+.p2{
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+
+.p1{
+    margin-top: 10px;
 }
 
 

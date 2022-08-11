@@ -1,3 +1,7 @@
 .chair-clicker{
+    display: grid;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
     grid-area: "chair-clicker";
 }

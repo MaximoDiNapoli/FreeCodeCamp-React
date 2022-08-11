@@ -2,14 +2,13 @@
 import './App.css';
 import Building from './components/Building';
 import Text from "./components/Text"
+import Chair from "./components/Chair"
 import { useState } from 'react';
-import Chair from './components/Chair';
 
 function App() {
 
 
   const [numChairs, setNumChairs] = useState(0); 
-
   const [numBrokenChair, setNumBrokenChair] = useState(0); 
   const [numGeneriChair, setNumGeneriChair] = useState(0); 
   const [numSchoolChair, setNumSchoolChair] = useState(0); 
@@ -19,39 +18,58 @@ function App() {
 
 
   const activateGame = () => {
-    alert("a")
-  }
+    const power = 1 + (numBrokenChair * 10) + (numGeneriChair * 100) + (numSchoolChair * 1000) + (numMetalChair * 10000) + (numGamerChair * 100000) + (numGamerRgbChair * 1000000);
+    setNumChairs(numChairs + power);
+  };
 
   const brokenChairManagement = () => {
-    setNumBrokenChair(numBrokenChair + 1);
+    if(numChairs > 10){
+      setNumChairs(numChairs - 10)
+      setNumBrokenChair(numBrokenChair + 1);
+    }
   };
 
   const generiChairManagement = () => {
-    setNumGeneriChair(numGeneriChair + 1);
+    if(numChairs > 100){
+      setNumChairs(numChairs - 100)
+      setNumGeneriChair(numGeneriChair + 1);
+    }
   };
 
   const schoolChairManagement = () => {
-    setNumSchoolChair(numSchoolChair + 1);
+    if(numChairs > 1000){
+      setNumChairs(numChairs - 1000)
+      setNumSchoolChair(numSchoolChair + 1);
+    }
   };
 
   const metalChairManagement = () => {
-    setNumMetalChair(numMetalChair + 1);
+    if(numChairs > 10000){
+      setNumChairs(numChairs - 10000)
+      setNumMetalChair(numMetalChair + 1);
+    }
   };
 
   const gamerChairManagement = () => {
-    setNumGamerChair(numGamerChair + 1);
+    if(numChairs > 100000){
+      setNumChairs(numChairs - 100000)
+      setNumGamerChair(numGamerChair + 1);
+    }
   };
 
   const gamerRgbManagement = () => {
-    setNumGamerRgbChair(numGamerRgbChair + 1);
+    if(numChairs > 1000000){
+      setNumChairs(numChairs - 1000000)
+      setNumGamerRgbChair(numGamerRgbChair + 1);
+    }
   };
-
 
   return (
     <div className="App">
       <div className='main-container'>
         <div className='data-container'>
-          <Text>123</Text>
+
+          <Text>{numChairs}</Text>
 
           <Chair img="logo.png"
           clickManagment={activateGame}

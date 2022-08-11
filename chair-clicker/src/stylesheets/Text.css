@@ -1,0 +1,18 @@
+.title-chairs{
+    margin-left: 40px;
+    margin-top: 40px;
+    background-color: aqua;
+    border-radius: 50px;
+    border: 1.5px solid black;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 50%);
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    padding-top: 15px;
+    font-size: larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

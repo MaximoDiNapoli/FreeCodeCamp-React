@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 function App() {
 
+
   const [numChairs, setNumChairs] = useState(0); 
 
   const [numBrokenChair, setNumBrokenChair] = useState(0); 

@@ -1,0 +1,9 @@
+.main-container {
+  display: flex;
+  height: 100%;
+  background-color: #210518;
+  
+}
+.buildings-container {
+  width: 40%;
+}

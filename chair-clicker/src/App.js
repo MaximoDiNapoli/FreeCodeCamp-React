@@ -2,13 +2,12 @@
 import './App.css';
 import Building from './components/Building';
 import Text from "./components/Text"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
 
 
   const [numChairs, setNumChairs] = useState(0); 
-
   const [numBrokenChair, setNumBrokenChair] = useState(0); 
   const [numGeneriChair, setNumGeneriChair] = useState(0); 
   const [numSchoolChair, setNumSchoolChair] = useState(0); 
@@ -40,12 +39,11 @@ function App() {
     setNumGamerRgbChair(numGamerRgbChair + 1);
   };
 
-
   return (
     <div className="App">
       <div className='main-container'>
         <div className='data-container'>
-          <Text>123</Text>
+          <Text>{numChairs}</Text>
         </div>
         <div className='buildings-container'>
 

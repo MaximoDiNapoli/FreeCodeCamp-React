@@ -1,13 +1,14 @@
 
 import './App.css';
 import Building from './components/Building';
+import Text from './components/Text';
 
 function App() {
   return (
     <div className="App">
       <div className='main-container'>
         <div className='data-container'>
-
+        <Text>123</Text>
         </div>
         <div className='buildings-container'>
 

@@ -1,4 +1,5 @@
 .title-chairs{
+    grid-area: "title-chairs";
     margin-left: 40px;
     margin-top: 40px;
     background-color: aqua;

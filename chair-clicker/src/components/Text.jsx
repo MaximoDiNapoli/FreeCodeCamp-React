@@ -6,7 +6,7 @@ function Text(props){
 
     return(
         <div className="title-chairs">         
-            <p> amount chairs {props.amount}</p>      
+            <p> amount chairs {props.children}</p>      
         </div>
     )
 

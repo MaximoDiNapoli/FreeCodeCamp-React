@@ -4,11 +4,11 @@
     border: 3px solid black;
     background-color: #93bd9a;
     display: flex;
-    grid-area: "building-container";
     flex: 1 1;
     justify-content:flex-start;;
     align-items: center;
     border-radius: 30px;
+    
 }
 
 .img-chair {
@@ -27,6 +27,13 @@
     font-family: Lato;
     color: black;
     margin: 2px;
+}
+
+#p1{
+
+    margin-bottom: 10px;
+    padding-top: 5px;
+
 }
 
 

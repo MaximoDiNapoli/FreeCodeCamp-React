@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <div className='main-container'>
         <div className='data-container'>
-        <Text>123</Text>
+          <Text>123</Text>
         </div>
         <div className='buildings-container'>
 

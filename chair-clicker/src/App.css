@@ -8,6 +8,9 @@
   background-color: #210518;
   
 }
-.buildings-container {
-  width: 40%;
+
+.buildings-container{
+  display: grid;
+  grid-area: "building-container";
+  justify-content: flex-end;
 }

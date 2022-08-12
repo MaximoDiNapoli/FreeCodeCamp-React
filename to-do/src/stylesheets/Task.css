@@ -19,6 +19,7 @@
   display: flex;
   align-items: center;
   overflow-wrap: anywhere;
+  user-select: none;
 }
 
 .task-icon {

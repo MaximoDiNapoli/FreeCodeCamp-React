@@ -10,20 +10,35 @@ function ListTask(){
   const addTask = task => {
     if(task.text.trim()) {
       task.text = task.text.trim();
-      const taskUpdate = [task, ...tasks];
-      setTasks(taskUpdate);
+      setTasks([task, ...tasks]);
     }
-    console.log("tarea agregada");
   }
 
+  const deleteTask = id => {
+    setTasks(tasks.filter(task => task.id !== id));
+  }
+
+  const completeTask = id => {
+    setTasks(tasks.map(task => {
+      if(task.id === id){
+        task.done = !task.done;
+      }
+      return task;
+    }));
+  }
   return(
     <>
       <TaskForm onSubmit={addTask}/>
       <div className="tasks-list-container">
         {
-          tasks.map((tasks) =>
-            <Task text={tasks.text}
-            done={tasks.done} />
+          tasks.map((task) =>
+            <Task
+              key={task.id}
+              id={task.id}
+              text={task.text}
+              done={task.done}
+              deleteTask={deleteTask}
+              completeTask={completeTask} />
           )
         }
       </div>

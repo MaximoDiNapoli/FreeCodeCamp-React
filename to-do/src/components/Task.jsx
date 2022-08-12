@@ -3,16 +3,16 @@ import "../stylesheets/Task.css"
 import { AiOutlineDelete } from 'react-icons/ai';
 
 
-function Task(props) {
-    return(
-        <div className={props.done ? "task-container done" : "task-container"}>
-            <div className="task-text">
-                {props.text}
-            </div>
-            <div className="task-container-icons">
-                <AiOutlineDelete className="task-icon"/>
-            </div>
-        </div>
+function Task({id, text, done, completeTask, deleteTask}) {
+  return(
+		<div className={done ? "task-container done" : "task-container"}>  
+			<div className="task-text" onClick={() => completeTask(id)}>
+        {text}
+      </div>
+        <div className="task-container-icons" onClick={() => deleteTask(id)}>
+        <AiOutlineDelete className="task-icon"/>
+      </div>
+    </div>
     );
 }
 
